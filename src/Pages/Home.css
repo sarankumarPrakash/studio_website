@@ -1,0 +1,31 @@
+.home-main{
+    
+    background-image: url('../Images/background.jpg');
+   
+    
+}
+.home{
+    margin: 12% 10% 0% 8%;
+    animation: 3s infinite alternate slidein;
+}
+
+
+.text-title,.text{
+    margin-left: 2%;
+    font-size: 3rem;
+}
+.title-desc{
+    margin-top: -3%;
+}
+
+.text-mithun{
+    font-size: 3.2rem;
+    margin-left: 1%;
+}
+.text-desc{
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+.text-button{
+    margin-left: 2%;
+}
