@@ -31,15 +31,17 @@ const Navbar = () => {
       <ul className='sidebar'>
           <li><CloseIcon onClick={closeSideBar}/></li>
           <li><Link to="" >Home</Link></li>
-          <li><Link to="/about">Gallery</Link></li>
-          <li><Link to="/about">Services</Link></li>
+          <li><Link to="/about">About </Link></li>
+          <li><Link to="/servives">Services</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
          
           <li><Button variant='contained' style={{ backgroundColor:'#ffb400', textTransform:'capitalize' }}> Book Now</Button></li>
         </ul>
         <ul>
           <li className='hideOnMobile'><Link to="" >Home</Link></li>
-          <li className='hideOnMobile'><Link to="/gallery">Gallery</Link></li>
-          <li className='hideOnMobile'><Link to="/about">Services</Link></li>
+          <li className='hideOnMobile'><Link to="/about">About</Link></li>
+          <li className='hideOnMobile'><Link to="/servives">Services</Link></li>
+          <li className='hideOnMobile'><Link to="/contact">Contact us </Link></li>
          
           <li className='hideOnMobile'><Button variant='contained' style={{ backgroundColor:'#ffb400', textTransform:'capitalize' }}> Book Now</Button></li>
           <li className='menu-button'><MenuOpenIcon onClick={showSidebar} style={{fontSize:'45px',color:'#ffb400'}}/></li>

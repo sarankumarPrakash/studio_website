@@ -6,6 +6,7 @@ import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 
+
 function App() {
   return (
     <div className="App">
