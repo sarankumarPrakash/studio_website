@@ -1,14 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-image: url("../Images/background.jpg");
   background-position: right top;
   background-repeat: no-repeat;
 }
+
 .text-mithun {
   color: #facc15;
 }
+
 .home-main {
   margin: 12% 10% 0% 10%;
 }
@@ -55,12 +58,15 @@ body {
   align-items: center;
   margin-top: 12%;
 }
+
 .client-header {
   font-size: 1.8rem;
 }
+
 .image-title {
   height: 85vh;
 }
+
 .image-align {
   margin-top: 5%;
   display: flex;
@@ -73,12 +79,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .industry-text-left {
   width: 50%;
 }
+
 .industry-text-right {
   width: 80%;
   margin-left: 15%;
+}
+
+.card-title {
+  font-size: 30px;
 }
 
 .card-text {
@@ -89,10 +101,35 @@ body {
   align-items: center;
 }
 
-.section-text :hover{
-    background-color: #2f2222;
+.section-text :hover {
+  background-color: #2f2222;
 }
 
-.container{
-  max-width:80%;
+.container {
+  max-width: 80%;
+}
+
+@media screen and (max-width:480px) {
+  body{
+    background-image: unset;
+  }
+  .home-main {
+    margin-top: 130px;
+  }
+
+  .text-title {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .text-mithun {
+    font-size: 26px;
+  }
+
+  .text-desc {
+    font-size: 22px;
+  }
 }

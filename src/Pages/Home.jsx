@@ -16,6 +16,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import DocumentScannerIcon from "@mui/icons-material/DocumentScanner";
 import CycloneIcon from "@mui/icons-material/Cyclone";
+import useScreenSize from "../utils/useScreenSize";
 
 // ------------------------------ Default Value ----------------
 
@@ -39,7 +40,9 @@ const sections = [
 
 const Home = () => {
 
-  const handleClick=(index)=>{
+  const [isMobile] = useScreenSize()
+
+  const handleClick = (index) => {
     console.log(index)
   }
   return (
@@ -59,7 +62,7 @@ const Home = () => {
             </p>
           </div>
           <div className="text-button">
-            <Stack direction="row" spacing={2}>
+            <Stack direction={isMobile ? "column" : "row"} spacing={2}>
               <Button
                 variant="contained"
                 endIcon={<ChevronRightIcon />}
@@ -211,9 +214,9 @@ const Home = () => {
         <div className="container">
           <Box sx={{ width: "60%", height: "auto", textAlign: "center" }}>
             <Card sx={{ backgroundColor: "#404040" }}>
-            
-              <CardContent sx={{width:'50%',margin:'15%'}}>
-              <div className="card-text">
+
+              <CardContent sx={{ width: '50%', margin: '15%' }}>
+                <div className="card-text">
                   <h3 >
                     Elevate your visual storytelling with ScrewFast's tailored
                     photography solutions.
@@ -221,11 +224,11 @@ const Home = () => {
                 </div>
                 <div>
                   {sections.map((section, index) => (
-                    <div key={index} onClick={(index)=>handleClick(index)} className="section-text">
+                    <div key={index} onClick={(index) => handleClick(index)} className="section-text">
                       <div >
-                        <h2 className="card-text">{section.heading}</h2>
+                        <h2 className="card-title card-text">{section.heading}</h2>
                         <h3 className="card-text">{section.text}</h3>
-                        
+
                       </div>
                     </div>
                   ))}
