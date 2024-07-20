@@ -32,7 +32,7 @@ const Navbar = () => {
           <li><CloseIcon onClick={closeSideBar}/></li>
           <li><Link to="" >Home</Link></li>
           <li><Link to="/about">About </Link></li>
-          <li><Link to="/servives">Services</Link></li>
+          <li><Link to="/service">Services</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
          
           <li><Button variant='contained' style={{ backgroundColor:'#ffb400', textTransform:'capitalize' }}> Book Now</Button></li>
@@ -40,7 +40,7 @@ const Navbar = () => {
         <ul>
           <li className='hideOnMobile'><Link to="" >Home</Link></li>
           <li className='hideOnMobile'><Link to="/about">About</Link></li>
-          <li className='hideOnMobile'><Link to="/servives">Services</Link></li>
+          <li className='hideOnMobile'><Link to="/service">Services</Link></li>
           <li className='hideOnMobile'><Link to="/contact">Contact us </Link></li>
          
           <li className='hideOnMobile'><Button variant='contained' style={{ backgroundColor:'#ffb400', textTransform:'capitalize' }}> Book Now</Button></li>

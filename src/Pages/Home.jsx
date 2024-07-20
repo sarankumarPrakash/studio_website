@@ -207,7 +207,7 @@ const Home = () => {
 
       {/* -------------------------Image Card ---------------------- */}
 
-      <div className="image-card">
+      {/* <div className="image-card">
         <div className="container">
           <Box sx={{ width: "60%", height: "auto", textAlign: "center" }}>
             <Card sx={{ backgroundColor: "#404040" }}>
@@ -234,7 +234,7 @@ const Home = () => {
             </Card>
           </Box>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
