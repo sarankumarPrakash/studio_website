@@ -109,10 +109,17 @@ body {
   max-width: 80%;
 }
 
+.multi-card-container {
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+
 @media screen and (max-width:480px) {
-  body{
+  body {
     background-image: unset;
   }
+
   .home-main {
     margin-top: 130px;
   }
@@ -129,7 +136,39 @@ body {
     font-size: 26px;
   }
 
-  .text-desc {
+  .text-desc,
+  .card-title {
     font-size: 22px;
+  }
+
+  .card-title {
+    text-decoration: underline;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  .industry-text {
+    display: unset;
+  }
+
+  .industry-text-left,
+  .industry-text-right {
+    width: 100%;
+  }
+
+  .industry-text-right {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .multi-card-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
 }

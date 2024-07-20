@@ -123,7 +123,7 @@ const Home = () => {
               rowSpacing={1}
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div>
                   <h2>
                     <GroupsIcon
@@ -143,7 +143,7 @@ const Home = () => {
                   </p>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div>
                   <h2>
                     <CycloneIcon
@@ -162,7 +162,7 @@ const Home = () => {
                   </p>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div>
                   <h2>
                     {" "}
@@ -183,7 +183,7 @@ const Home = () => {
                   </p>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div>
                   <h2>
                     {" "}
@@ -212,10 +212,11 @@ const Home = () => {
 
       <div className="image-card">
         <div className="container">
-          <Box sx={{ width: "60%", height: "auto", textAlign: "center" }}>
+          {/* <Box height='auto' width='60%' sx={{ width: "100%", height: "auto", textAlign: "center" }}> */}
+          <div className="multi-card-container">
             <Card sx={{ backgroundColor: "#404040" }}>
 
-              <CardContent sx={{ width: '50%', margin: '15%' }}>
+              <CardContent sx={{ width: '100%', margin: '0 auto' }} sm={{ width: '50%', margin: '15%' }}>
                 <div className="card-text">
                   <h3 >
                     Elevate your visual storytelling with ScrewFast's tailored
@@ -226,7 +227,7 @@ const Home = () => {
                   {sections.map((section, index) => (
                     <div key={index} onClick={(index) => handleClick(index)} className="section-text">
                       <div >
-                        <h2 className="card-title card-text">{section.heading}</h2>
+                        <h2 className="card-title">{section.heading}</h2>
                         <h3 className="card-text">{section.text}</h3>
 
                       </div>
@@ -235,7 +236,8 @@ const Home = () => {
                 </div>
               </CardContent>
             </Card>
-          </Box>
+          </div>
+          {/* </Box> */}
         </div>
       </div>
     </div>
